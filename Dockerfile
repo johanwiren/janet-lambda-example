@@ -36,9 +36,9 @@ RUN if [ -n "$WITH_SOURCE" ]; then zip -r  ../lambda/lambda.zip . ; fi
 WORKDIR /app/project/build
 RUN echo "#!/bin/sh" > bootstrap
 RUN echo 'export JANET_PATH=$LAMBDA_TASK_ROOT/lib' >> bootstrap
-RUN echo 'exec ./runtime' >> bootstrap
+RUN echo 'exec ./hello.handler' >> bootstrap
 RUN chmod +x bootstrap
-RUN zip -r  ../lambda/lambda.zip runtime bootstrap
+RUN zip -r  ../lambda/lambda.zip hello.handler bootstrap
 
 WORKDIR /app/project
 

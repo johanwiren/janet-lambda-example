@@ -7,10 +7,10 @@
   (set ctx {:from :init}))
 
 (defn handler [{:ctx lambda-ctx :event event}]
-  (json/encode {:lambda-ctx lambda-ctx
-                :event event
-                :local-ctx ctx
-                :env (os/environ)}))
+  {:lambda-ctx lambda-ctx
+   :event event
+   :local-ctx ctx
+   :env (os/environ)})
 
 (defn main [_]
   (lambda/serve initialise! handler))
