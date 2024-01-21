@@ -1,12 +1,7 @@
 (declare-project
  :name "lambda-example"
- :dependencies
- ["spork"
-  {:repo "https://github.com/cosmictoast/jurl.git" :tag "v1.4.2"}
-  {:repo "https://github.com/johanwiren/janet-lambda-runtime.git"}])
-
-(declare-source
- :source ["src/janet-lambda-example.janet"])
+ :dependencies [{:repo "https://github.com/johanwiren/janet-lambda-runtime.git"}
+                "spork"])
 
 (declare-executable
  :name "runtime"

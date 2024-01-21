@@ -1,4 +1,3 @@
-(import spork/http :as http)
 (import spork/json :as json)
 (import lambda-runtime :as lambda)
 
