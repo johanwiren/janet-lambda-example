@@ -1,4 +1,3 @@
-(import spork/json :as json)
 (import lambda-runtime :as lambda)
 
 (var ctx {})
