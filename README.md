@@ -17,6 +17,8 @@ Note that this example uses `arm64`. If you are on `x86_64` you will need to upd
 sam build
 ```
 
+SAM will invoke `make`, which in turn starts a `docker build` that eventually runs `jpm build --local`.
+
 ### Deploy the project
 
 ```
