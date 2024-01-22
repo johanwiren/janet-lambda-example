@@ -24,6 +24,6 @@ RUN jpm deps --local
 
 COPY . /app/project/
 
-RUN ./build-lambda.sh
+RUN jpm build --local
 
 CMD ["janet"] 

@@ -5,6 +5,6 @@
                 "spork"])
 
 (declare-executable
- :name "hello.handler"
+ :name "bootstrap"
  :entry "src/lambda-example.janet"
  :install false)

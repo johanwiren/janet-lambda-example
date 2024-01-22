@@ -1,3 +1,0 @@
-#!/bin/sh
-export JANET_PATH=$LAMBDA_TASK_ROOT/lib
-exec ./hello.handler
