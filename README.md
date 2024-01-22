@@ -35,7 +35,7 @@ Value               arn:aws:iam::427536279568:role/janet-lambda-example-HelloWor
 
 Key                 HelloWorldApi                                                                                                                                             
 Description         API Gateway endpoint URL for Prod stage for Hello World function                                                                                          
-Value               https://z8xv7bc8e9.execute-api.eu-north-1.amazonaws.com/hello/                                                                                            
+Value               https://z8xv7bc8e9.execute-api.eu-north-1.amazonaws.com/hello                                                                                            
 
 Key                 HelloWorldFunction                                                                                                                                        
 Description         Hello World Lambda Function ARN                                                                                                                           
